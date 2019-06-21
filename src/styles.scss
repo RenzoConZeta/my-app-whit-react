@@ -1,7 +1,7 @@
 .book {
   display: inline-block;
   width: 220px;
-  height: 220px;
+  height: 345px;
   margin: 10px;
   text-align: left;
   cursor: pointer;
@@ -10,11 +10,11 @@
 
 .book-img {
   width: 220px;
-  height: 220px;
+  height: 340px;
   border: 4px solid #000;
   border-radius: 4px;
   object-fit: cover;
-  position: absolute;
+  // position: absolute;
 }
 
 .book-text {
