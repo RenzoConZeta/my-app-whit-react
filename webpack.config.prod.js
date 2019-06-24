@@ -57,6 +57,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './index.html',
+      title: 'App in prod',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        'theme-color': '#4285f4',
+        description: 'Bienvenid@s, esta aplicación fue construida con Webpack',
+      },
       minify: {
         collapseWhitespace: true,
         removeComments: true,
