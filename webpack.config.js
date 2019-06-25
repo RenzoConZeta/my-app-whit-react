@@ -77,6 +77,10 @@ module.exports = {
     ]
   },
 
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
+
   optimization: {
     splitChunks: {
       cacheGroups: {

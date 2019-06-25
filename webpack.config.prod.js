@@ -76,6 +76,9 @@ module.exports = {
     }),
     new PurgecssPlugin({
       paths: glob.sync(`${path.join(__dirname, 'src')}/**/*`,  { nodir: true }),
+      whitelistPatterns: [
+        /^transition/,
+      ]
     }),
   ],
 
@@ -108,6 +111,10 @@ module.exports = {
         use: 'file-loader?name=[path][name].[ext]'
       },
     ]
+  },
+
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
 
   optimization: {
