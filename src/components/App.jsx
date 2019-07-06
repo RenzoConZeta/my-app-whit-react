@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <div>
         <h2>
-          Book Explorer
+          Favorite Books
         </h2>
         <Gallery items={this.state.items} />
       </div>
